@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const header = () => {
     return (
-        <header className="border-b-slate-200 border-b-[1.4px] py-3 px-9">
+        <header className="border-b-slate-200 border-b-[1.4px] py-3 px-9 sticky top-0 z-[99] bg-neutral-100/20 backdrop-blur-md">
             <div className="flex items-center justify-between container mx-auto">
                 <div className="header-icons flex items-center gap-2">
                     <Image className='h-12 w-12' src={TenizenCodeIcon} alt="TenizenCodeIcon" />
