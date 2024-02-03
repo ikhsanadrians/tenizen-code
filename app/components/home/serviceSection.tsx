@@ -1,11 +1,10 @@
-import React from 'react'
-import { HiMiniCodeBracket } from "react-icons/hi2";
-import { PiAndroidLogoFill } from "react-icons/pi";
-import { MdLaptopMac, MdOutlineMiscellaneousServices, MdSettingsSuggest } from "react-icons/md";
-
+import { MdSettingsSuggest } from "react-icons/md";
+import ServiceCard from "../partials/card";
+import { data } from "../../data/service"
 
 
 const ServiceSection = () => {
+    console.log(data)
     return (
         <div className="container mx-auto flex justify-center h-full mt-52 mb-52">
             <div className="relative">
@@ -21,40 +20,11 @@ const ServiceSection = () => {
                     </div>
                 </div>
                 <div className="service-list mt-8 z-99 grid grid-cols-3 px-8 gap-4">
-                    <div className="web bg-white border-neutral-300 border-[1.2px] rounded-2xl p-8">
-                        <HiMiniCodeBracket size={30} className='fill-neutral-800' />
-                        <div className="middle-text mt-2">
-                            <p className="font-bold text-xl text-neutral-700">Web Development</p>
-                            <p className="text-sm text-neutral-500">Kami Menerima Jasa Pembuatan Website</p>
-                        </div>
-                        <div className="bottom-text mt-3 text-neutral-700">
-                            <p>Website khusus perusahaan, sekolah, atau personal. Desain pro, responsif, SEO, harga bersaing.</p>
-                        </div>
-                    </div>
-                    <div className="mobile bg-white border-neutral-300 border-[1.2px] rounded-2xl p-8">
-                        <PiAndroidLogoFill size={30} className='fill-neutral-800' />
-                        <div className="middle-text mt-2">
-                            <p className="font-bold text-xl text-neutral-700">Mobile Apps Development</p>
-                            <p className="text-sm text-neutral-500">Kami Menerima Jasa Pembuatan Aplikasi</p>
-                        </div>
-                        <div className="bottom-text mt-3 text-neutral-700">
-                            <p>Solusi khusus untuk aplikasi perusahaan, pendidikan, atau personal. Desain pro, fungsional, harga bersaing. Wujudkan ide aplikasi Anda bersama kami!</p>
-                        </div>
-                    </div>
-                    <div className="service-repair bg-white border-neutral-300 border-[1.2px] rounded-2xl p-8">
-                        <div className="icons flex items-center gap-2">
-                            <MdLaptopMac size={30} className='fill-neutral-800' />
-                            <MdOutlineMiscellaneousServices size={30} className='fill-neutral-800' />
-                        </div>
-                        <div className="middle-text mt-2">
-                            <p className="font-bold text-xl text-neutral-700">Service And Repair</p>
-                            <p className="text-sm text-neutral-500">Kami Menerima Jasa Servis Dan Perbaikan Laptop Atau PC</p>
-                        </div>
-                        <div className="bottom-text mt-3 text-neutral-700">
-                            <p>Solusi khusus untuk aplikasi perusahaan, pendidikan, atau personal. Desain pro, fungsional, harga bersaing. Wujudkan ide aplikasi Anda bersama kami!</p>
-                        </div>
-                    </div>
-
+                      {
+                        data.map((item,index)=>(
+                            <ServiceCard key={index} title={item.title} subtitle={item.subtitle} description={item.description} icon={item.icons}/>
+                        ))
+                      }
                 </div>
                 <div className="flex min-h-screen justify-center items-center">
                     <div className="absolute inset-y-16 inset-x-0 w-72 h-80 blur-[145px] rounded-full rotate-45 bg-gradient-to-b -z-10 from-blue-800 to-indigo-600 ">
