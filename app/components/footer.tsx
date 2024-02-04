@@ -4,13 +4,13 @@ import Image from "next/image"
 
 const Footer = () => {
     return (
-        <footer className="bg-black h-full w-full px-24 pt-16 pb-28">
-            <div className="container mx-auto flex gap-8 items-center justify-between">
+        <footer className="bg-black h-full w-full px-8 lg:px-24 pt-16 pb-28 relative overflow-hidden">
+            <div className="container mx-auto flex lg:flex-row flex-col gap-8 items-center justify-between z-90">
                 <div className="company-profile flex flex-col self-start">
                     <div className="company-logo flex items-center gap-1">
                         <Image className='h-10 w-10' src={TenizenCodeIcon} alt="TenizenCodeIcon" />
                     </div>
-                    <div className="company-name text-white mt-1 font-medium">
+                    <div className="company-name text-white mt-1 font-bold tracking-wide text-xl">
                         <p>PT. Tenizencode Indonesia</p>
                     </div>
                     <div className="company-address w-72 mt-2 text-neutral-400">
@@ -35,7 +35,7 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <div className="menu flex gap-12">
+                <div className="menu flex lg:flex-row flex-col lg:self-center self-start gap-12 lg:mt-0 mt-16">
                     <div className="services">
                         <ul className="text-white">
                             <li className='font-bold'>Services</li>
@@ -66,6 +66,10 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div className="absolute right-24 -bottom-24 z-80 w-72 h-64 blur-[165px] rounded-full rotate-45 bg-gradient-to-r from-neutral-600 to-white">
+            </div>
+            <div className="absolute -left-12 -top-24 z-80 w-72 h-64 blur-[165px] rounded-full rotate-45 bg-gradient-to-r from-neutral-600 to-white">
             </div>
         </footer>
     )
