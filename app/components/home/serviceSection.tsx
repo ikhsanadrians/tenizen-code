@@ -7,7 +7,7 @@ const ServiceSection = () => {
     return (
         <div className="container mx-auto flex justify-center h-full mt-72 mb-52">
             <div className="relative h-full">
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center" data-aos="fade-up">
                     <div className="servicesectiontitle flex items-center gap-2 border-[1.5px] border-neutral-700 px-4 py-1 rounded-3xl">
                         <p className='text-xl font-medium text-neutral-700'>
                             Our Services
@@ -18,7 +18,7 @@ const ServiceSection = () => {
                         <h1 className="text-5xl bg-gradient-to-r from-neutral-900 via-neutral-700 to-neutral-500 bg-clip-text text-transparent font-extrabold w-3/6 text-center">Transform your tech business with tailored services</h1>
                     </div>
                 </div>
-                <div className="service-list mt-8 z-99 grid grid-cols-3 px-8 gap-4">
+                <div className="service-list mt-8 z-99 grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 px-8 gap-4" data-aos="fade-up">
                     {
                         data.map((item, index) => (
                             <ServiceCard key={index} title={item.title} subtitle={item.subtitle} description={item.description} icon={item.icons} />
