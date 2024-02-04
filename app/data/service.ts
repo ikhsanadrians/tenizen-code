@@ -27,15 +27,15 @@ const data: ServiceData[] = [
     {
         title: "Content Creator",
         subtitle : "Kami Menerima Jasa Content Creating",
-        description :  "Solusi terpercaya untuk content creating",
+        description :  "Solusi terpercaya untuk Pembuatan Design Poster, Design Produk, Presentasi, Video Kreatif , Iklan dan Jasa Pengelolaan Sosial Media",
         icons : "content"
     },
     {
         title : "Training And Course", 
-        subtitle : "Kami Menerima Les Coding",
-        description: "Solusi pembelajran coding dari nol, berdasarkan kurikulum yang kita buat",
-        icons : "setting"
-    }
+        subtitle : "Kami Menerima Les Pemrograman Dan Coding",
+        description: "Solusi pembelajaran coding dari nol, berdasarkan kurikulum yang kita buat, Peserta Juga akan mendapatkan e-book dan video pembelajaran",
+        icons : "course"
+    },
 ];
 
 
