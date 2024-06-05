@@ -15,7 +15,7 @@ const ServiceSection = () => {
                         <MdSettingsSuggest size={25} className="fill-neutral-700" />
                     </div>
                     <div className="servicesection-detail mt-8 flex justify-center w-full">
-                        <h1 className="text-5xl bg-gradient-to-r from-neutral-900 via-neutral-700 to-neutral-500 bg-clip-text text-transparent font-extrabold w-3/6 text-center">Transform your tech business with tailored services</h1>
+                        <h1 className="text-3xl lg:text-5xl bg-gradient-to-r from-neutral-900 via-neutral-700 to-neutral-500 bg-clip-text text-transparent font-extrabold w-full lg:w-3/6 text-center">Transform your tech business with tailored services</h1>
                     </div>
                 </div>
                 <div className="service-list mt-8 z-99 grid md:grid-cols-2 grid-cols-1 lg:grid-cols-3 px-8 gap-4" data-aos="fade-up">
@@ -26,9 +26,9 @@ const ServiceSection = () => {
                     }
                 </div>
                 <div className="flex h-full justify-center items-center overflow-hidden">
-                    <div className="absolute inset-y-16 inset-x-0 w-72 h-80 blur-[145px] rounded-full rotate-45 bg-gradient-to-b -z-10 from-blue-800 to-indigo-600 ">
+                    <div className="absolute inset-y-16 inset-x-0 w-72 h-80 blur-[145px] rounded-full rotate-45 bg-gradient-to-b -z-10 from-primary to-indigo-600 opacity-50">
                     </div>
-                    <div className="absolute right-24 -bottom-80 w-72 h-80 blur-[165px] rounded-full rotate-45 bg-gradient-to-b -z-10 from-blue-800 to-indigo-600 ">
+                    <div className="absolute right-24 -bottom-[4rem] w-72 h-80 blur-[165px] rounded-full rotate-45 bg-gradient-to-b -z-10 from-primary to-indigo-600 opacity-50">
                     </div>
                 </div>
 

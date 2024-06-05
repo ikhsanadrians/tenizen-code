@@ -3,19 +3,19 @@ import React from 'react'
 const Hero = () => {
     return (
         <div className="container mx-auto flex justify-center h-full max-h-screen">
-            <div className="flex flex-col items-center  mt-32  relative">
+            <div className="flex flex-col items-center  mt-32 lg:px-0 px-4 relative">
                 <div className="text-hero flex flex-col items-center text-center text-3xl lg:text-5xl" data-aos="fade-up">
-                    <div className="font-extrabold text-transparent  tracking-wide bg-gradient-to-r from-secondary via-indigo-800 to-blue-600 bg-clip-text">
+                    <div className="font-extrabold tracking-wide bg-gradient-to-r from-neutral-900 via-neutral-700 to-neutral-500 bg-clip-text text-transparent first-letter:bg-clip-text">
                         Welcome to TenizenCode
                     </div>
-                    <div className="font-extrabold text-transparent tracking-wide bg-gradient-to-r from-secondary via-indigo-800 to-blue-600 bg-clip-text">
+                    <div className="font-extrabold text-transparent tracking-wide bg-gradient-to-r from-neutral-900 via-neutral-700 to-neutral-500 bg-clip-text text-transparent">
                         Your Best IT Services Provider
                     </div>
                 </div>
-                <div className="description w-3/4 mt-5" data-aos="fade-up">
+                <div className="description w-full px-4 lg:w-3/4 mt-5" data-aos="fade-up">
                     <p className='text-center text-lg'>Elevate your digital experience with TenizenCode, where we craft seamless web applications, stunning designs, and coding tutorials. Connect, collaborate, and conquer your goals effortlessly with our comprehensive solutions.</p>
                 </div>
-                <button data-aos="fade-up" className='bg-black text-white px-4 py-2 mt-6 rounded-lg font-semibold hover:bg-secondary duration-500'>
+                <button data-aos="fade-up" className='bg-neutral-800 text-white px-4 py-2 mt-6 rounded-lg font-semibold hover:bg-primary duration-500'>
                     Get Started
                 </button>
 

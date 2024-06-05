@@ -11,15 +11,15 @@ const ServiceCard = ({ title, subtitle, description, icon }: { title: string, su
 
   const changeIcon = (icons: string) => {
     switch (icons) {
-      case "web": return <HiMiniCodeBracket size={30} className='fill-neutral-800' />
+      case "web": return <HiMiniCodeBracket size={30} className='fill-neutral-800 group-hover:fill-primary' />
         break;
-      case "mobile": return <PiAndroidLogoFill size={30} className='fill-neutral-800' />
+      case "mobile": return <PiAndroidLogoFill size={30} className='fill-neutral-800 group-hover:fill-primary' />
         break;
-      case "servis": return <MdLaptopMac size={30} className='fill-neutral-800' />
+      case "servis": return <MdLaptopMac size={30} className='fill-neutral-800 group-hover:fill-primary' />
         break;
-      case "content": return <FaPhotoVideo size={30} className='fill-neutral-800' />
+      case "content": return <FaPhotoVideo size={30} className='fill-neutral-800 group-hover:fill-primary' />
         break;
-      case "course": return <FaChalkboardTeacher size={30} className='fill-neutral-800' />
+      case "course": return <FaChalkboardTeacher size={30} className='fill-neutral-800 group-hover:fill-primary' />
         break;
     }
 
@@ -33,7 +33,7 @@ const ServiceCard = ({ title, subtitle, description, icon }: { title: string, su
         {changeIcon(icon)}
       </div>
       <div className="middle-text mt-2">
-        <p className="font-bold text-xl text-neutral-700 group-hover:text-secondary duration-100">{title}</p>
+        <p className="font-bold text-xl text-neutral-700 group-hover:text-primary duration-100">{title}</p>
         <p className="text-sm text-neutral-500">{subtitle}</p>
       </div>
       <div className="bottom-text mt-3 text-neutral-700">
